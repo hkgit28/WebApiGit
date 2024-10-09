@@ -13,5 +13,12 @@ namespace WebApiGit.Controllers
         {
             return Ok.(DateTime.Now);
         }
+        [HttpGet]
+        [Route("time")]
+        public IActionResult getresult()
+        {
+            return Ok(DateTime.Now.ToLongTimeString());
+        }
+
     }
 }
